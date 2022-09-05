@@ -24,15 +24,15 @@ public class PosterManagerTest {
 
     @Test
     public void showFindLast() {
-        PosterManager manager = new PosterManager(10);
+        PosterManager manager = new PosterManager(15);
 
-        manager.add("Bloodshot");
-        manager.add("Forward");
-        manager.add("Hotel Belgrade");
-        manager.add("Gentlemen");
-        manager.add("Man is invisible");
-        manager.add("Trolls. world tour");
         manager.add("Number one");
+        manager.add("Trolls. world tour");
+        manager.add("Man is invisible");
+        manager.add("Gentlemen");
+        manager.add("Hotel Belgrade");
+        manager.add("Forward");
+        manager.add("Bloodshot");
 
 
         String[] expected = {"Bloodshot", "Forward", "Hotel Belgrade", "Gentlemen", "Man is invisible", "Trolls. world tour", "Number one"};
@@ -45,13 +45,13 @@ public class PosterManagerTest {
     public void showFindLastAbove() {
         PosterManager manager = new PosterManager(7);
 
-        manager.add("Bloodshot");
-        manager.add("Forward");
-        manager.add("Hotel Belgrade");
-        manager.add("Gentlemen");
-        manager.add("Man is invisible");
-        manager.add("Trolls. world tour");
         manager.add("Number one");
+        manager.add("Trolls. world tour");
+        manager.add("Man is invisible");
+        manager.add("Gentlemen");
+        manager.add("Hotel Belgrade");
+        manager.add("Forward");
+        manager.add("Bloodshot");
 
 
         String[] expected = {"Bloodshot", "Forward", "Hotel Belgrade", "Gentlemen", "Man is invisible", "Trolls. world tour", "Number one"};
